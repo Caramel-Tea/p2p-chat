@@ -1,0 +1,48 @@
+{
+  "name": "p2p-chat",
+  "private": true,
+  "version": "0.0.0",
+  "description": "LAN P2P chat and file transfer app built with Electron and Vue",
+  "author": "時雨てる",
+  "type": "module",
+  "main": "dist-electron/main/index.js",
+  "scripts": {
+    "dev": "vite",
+    "dev:2": "cross-env PORT_OFFSET=1 vite",
+    "generate:icons": "node scripts/generate-icons.mjs",
+    "build": "npm run generate:icons && vue-tsc && vite build && electron-builder",
+    "preview": "vite preview"
+  },
+  "build": {
+    "appId": "com.shigureteru.p2pchat",
+    "productName": "P2P Chat",
+    "directories": {
+      "buildResources": "build"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icons/app-icon.ico"
+    }
+  },
+  "dependencies": {
+    "@electron-toolkit/utils": "^4.0.0",
+    "vue": "^3.5.38"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vue/tsconfig": "^0.9.1",
+    "cross-env": "^10.1.0",
+    "electron": "^42.5.0",
+    "electron-builder": "^26.0.12",
+    "png-to-ico": "^2.1.8",
+    "sharp": "^0.34.4",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.0",
+    "vite-plugin-electron": "^1.1.0",
+    "vite-plugin-electron-renderer": "^1.0.0",
+    "vue-tsc": "^3.3.5"
+  }
+}

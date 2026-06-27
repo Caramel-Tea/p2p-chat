@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="88" y1="64" x2="432" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F3FAFF"/>
+      <stop offset="0.52" stop-color="#B8DEFF"/>
+      <stop offset="1" stop-color="#72B9F8"/>
+    </linearGradient>
+    <linearGradient id="bubbleBack" x1="114" y1="136" x2="352" y2="344" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EAF6FF"/>
+    </linearGradient>
+    <linearGradient id="bubbleFront" x1="172" y1="210" x2="410" y2="414" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#74C6FF"/>
+      <stop offset="1" stop-color="#2A8DE8"/>
+    </linearGradient>
+    <filter id="shadow" x="52" y="66" width="408" height="388" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+      <feOffset dy="20"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feColorMatrix values="0 0 0 0 0.066 0 0 0 0 0.259 0 0 0 0 0.431 0 0 0 0.16 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="136" fill="url(#bg)"/>
+  <circle cx="392" cy="122" r="42" fill="#FFFFFF" fill-opacity="0.62"/>
+  <circle cx="128" cy="396" r="28" fill="#D9EEFF" fill-opacity="0.72"/>
+
+  <g filter="url(#shadow)">
+    <path d="M121 150C121 127.909 138.909 110 161 110H289C311.091 110 329 127.909 329 150V245C329 267.091 311.091 285 289 285H222L170 331V285H161C138.909 285 121 267.091 121 245V150Z" fill="url(#bubbleBack)"/>
+    <path d="M185 226C185 203.909 202.909 186 225 186H351C373.091 186 391 203.909 391 226V321C391 343.091 373.091 361 351 361H298L246 407V361H225C202.909 361 185 343.091 185 321V226Z" fill="url(#bubbleFront)"/>
+  </g>
+
+  <circle cx="192" cy="198" r="14" fill="#56AEEF" fill-opacity="0.95"/>
+  <circle cx="226" cy="198" r="14" fill="#56AEEF" fill-opacity="0.95"/>
+  <circle cx="260" cy="198" r="14" fill="#56AEEF" fill-opacity="0.95"/>
+
+  <circle cx="258" cy="276" r="15" fill="#F8FCFF"/>
+  <circle cx="295" cy="276" r="15" fill="#F8FCFF"/>
+  <circle cx="332" cy="276" r="15" fill="#F8FCFF"/>
+</svg>
